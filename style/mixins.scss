@@ -1,0 +1,9 @@
+@mixin bigTitle($size) {
+	font-family: Montserrat-Bold;
+	font-size: $size;
+	font-weight: 700;
+	line-height: 50px/$size;
+	letter-spacing: 0.20000000298023224px;
+
+
+}
