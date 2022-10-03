@@ -1,6 +1,8 @@
 :root {
   --mainColor: #252B42;
+  --mainColor-hover: #1a1f31;
   --secondColor: #737373;
   --thirtColor: #96BB7C;
-  --fouthColor: #FFFFFF;
-}/*# sourceMappingURL=variables.css.map */
+  --fouthColor: #FFFFFF; }
+
+/*# sourceMappingURL=variables.css.map */
