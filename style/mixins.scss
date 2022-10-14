@@ -1,7 +1,29 @@
 @mixin bigTitle($size) {
-	font-family: Montserrat-Bold;
-	font-size: $size;
-	font-weight: 700;
-	line-height: 50/$size;
-	letter-spacing: 0.20000000298023224px;
+  font-family: Montserrat-Bold;
+  font-size: #{$size}px;
+  font-weight: 700;
+  line-height: 50 / $size;
+  letter-spacing: 0.20000000298023224px;
+}
+@mixin subTitle($size) {
+  font-family: Montserrat;
+  font-size: #{$size}px;
+  font-weight: 700;
+  line-height: 24 / $size;
+  letter-spacing: 0.20000000298023224px;
+  color: var(--thirtColor);
+}
+@mixin buttonColor($bgColor, $color) {
+  border-radius: 5px;
+  border: 1px solid $bgColor;
+  padding: 15px 40px 15px 40px;
+  background-color: $bgColor;
+  color: $color;
+}
+@mixin buttonTransparent($bgColor, $color, $radius) {
+  border-radius: $radius;
+  border: 1px solid $color;
+  padding: 15px 40px 15px 40px;
+  background-color: $bgColor;
+  color: $color;
 }

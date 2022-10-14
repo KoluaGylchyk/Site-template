@@ -77,6 +77,12 @@ body {
     html .wrapper .wrapper__main,
     body .wrapper .wrapper__main {
       flex: 1 1 auto; }
+    html .wrapper .wrapper__header,
+    body .wrapper .wrapper__header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0; }
     html .wrapper .button-main,
     body .wrapper .button-main {
       position: relative;
@@ -144,7 +150,6 @@ body {
           padding: 16px;
           border-radius: 5px;
           color: var(--thirtColor);
-          border: 2px solid var(--fouthColor);
           transition: all 0.5s ease; }
           html .wrapper .header__container .header__block2 .header__login:hover,
           body .wrapper .header__container .header__block2 .header__login:hover {
@@ -164,5 +169,72 @@ body {
       html .wrapper .header__block1,
       body .wrapper .header__block1 {
         gap: 20px !important; } }
+    html .wrapper .main,
+    body .wrapper .main {
+      padding-top: 257px;
+      position: relative; }
+      html .wrapper .main::after,
+      body .wrapper .main::after {
+        content: "";
+        display: block;
+        width: 41%;
+        height: 85%;
+        background-color: #EFF8ED;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        border-bottom-left-radius: 80px; }
+      html .wrapper .main__sub-title,
+      body .wrapper .main__sub-title {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.7142857143;
+        letter-spacing: 0.20000000298023224px;
+        color: var(--thirtColor);
+        text-align: center;
+        padding-bottom: 40px; }
+      html .wrapper .main__title,
+      body .wrapper .main__title {
+        font-family: Montserrat;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 80px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        padding-bottom: 40px; }
+      html .wrapper .main__text,
+      body .wrapper .main__text {
+        display: block;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        color: var(--secondColor);
+        padding-bottom: 40px; }
+      html .wrapper .main__buttons,
+      body .wrapper .main__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 152px;
+        gap: 10px; }
+      html .wrapper .main__button-getnow,
+      body .wrapper .main__button-getnow {
+        border-radius: 5px;
+        border: 1px solid var(--thirtColor);
+        padding: 15px 40px 15px 40px;
+        background-color: var(--thirtColor);
+        color: var(--fouthColor); }
+      html .wrapper .main__button-learn,
+      body .wrapper .main__button-learn {
+        border-radius: 5px;
+        border: 1px solid var(--thirtColor);
+        padding: 15px 40px 15px 40px;
+        background-color: var(--fouthColor);
+        color: var(--thirtColor); }
 
 /*# sourceMappingURL=main.css.map */
