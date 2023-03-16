@@ -118,7 +118,9 @@ body {
       align-items: center;
       padding-top: 20px;
       padding-bottom: 20px;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      background-color: #fff;
+      overflow: hidden; }
       html .wrapper .header__container .header__block1,
       body .wrapper .header__container .header__block1 {
         display: flex;
@@ -172,7 +174,8 @@ body {
     html .wrapper .main,
     body .wrapper .main {
       padding-top: 257px;
-      position: relative; }
+      position: relative;
+      z-index: -1; }
       html .wrapper .main::after,
       body .wrapper .main::after {
         content: "";
@@ -183,7 +186,7 @@ body {
         position: absolute;
         top: 0;
         right: 0;
-        z-index: -1;
+        z-index: -2;
         border-bottom-left-radius: 80px; }
       html .wrapper .main__sub-title,
       body .wrapper .main__sub-title {
@@ -221,20 +224,93 @@ body {
         justify-content: center;
         align-items: center;
         padding-bottom: 152px;
-        gap: 10px; }
+        gap: 10px;
+        flex-wrap: wrap; }
       html .wrapper .main__button-getnow,
       body .wrapper .main__button-getnow {
         border-radius: 5px;
         border: 1px solid var(--thirtColor);
         padding: 15px 40px 15px 40px;
         background-color: var(--thirtColor);
-        color: var(--fouthColor); }
+        color: var(--fouthColor);
+        min-width: 174px; }
       html .wrapper .main__button-learn,
       body .wrapper .main__button-learn {
         border-radius: 5px;
         border: 1px solid var(--thirtColor);
         padding: 15px 40px 15px 40px;
         background-color: var(--fouthColor);
-        color: var(--thirtColor); }
+        color: var(--thirtColor);
+        min-width: 174px; }
+    html .wrapper .block-carusel__container,
+    body .wrapper .block-carusel__container {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 130px; }
+    html .wrapper .block-carusel__items,
+    body .wrapper .block-carusel__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 25px; }
+    @media (max-width: 647px) {
+      html .wrapper .block-carusel__items,
+      body .wrapper .block-carusel__items {
+        justify-content: center;
+        align-items: center; } }
+    @media (max-width: 516px) {
+      html .wrapper .block-carusel__items,
+      body .wrapper .block-carusel__items {
+        justify-content: space-between;
+        align-items: center; } }
+    html .wrapper .block-packages__subTitle,
+    body .wrapper .block-packages__subTitle {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.7142857143;
+      letter-spacing: 0.20000000298023224px;
+      color: var(--thirtColor); }
+    html .wrapper .block-packages__title,
+    body .wrapper .block-packages__title {
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      gap: 10px; }
+    html .wrapper .block-packages__text,
+    body .wrapper .block-packages__text {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left; }
+    html .wrapper .block-packages__items,
+    body .wrapper .block-packages__items {
+      padding-bottom: 150px; }
+    html .wrapper .items-packages,
+    body .wrapper .items-packages {
+      display: flex;
+      padding-top: 112px; }
+    html .wrapper .item-packages__name,
+    body .wrapper .item-packages__name {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: left; }
+    html .wrapper .item-packages__line,
+    body .wrapper .item-packages__line {
+      padding-bottom: 20px; }
+    html .wrapper .item-packages__text,
+    body .wrapper .item-packages__text {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left; }
 
 /*# sourceMappingURL=main.css.map */

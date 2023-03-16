@@ -1,6 +1,7 @@
 .main {
   padding-top: 257px;
   position: relative;
+  z-index: -1;
   &::after{
 	content:"";
 	display: block;
@@ -10,8 +11,9 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	z-index: -1;
+	z-index: -2;
 	border-bottom-left-radius: 80px;
+
  
   }
 
@@ -52,15 +54,18 @@
 	align-items: center;
 	padding-bottom: 152px;
 	gap: 10px;
-  }
+  flex-wrap: wrap;
+    }
 
   &__button-getnow {
 	@include buttonColor(var(--thirtColor),var(--fouthColor));
+  min-width: 174px;
 	
 	
   }
 
   &__button-learn {
 	@include buttonTransparent(var(--fouthColor),var(--thirtColor),5px);
+  min-width: 174px;
   }
 }

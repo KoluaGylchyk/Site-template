@@ -1,0 +1,66 @@
+.wrapper {
+  &__packages-block {
+  }
+}
+.block-packages {
+  &__container {
+  }
+
+  &__subTitle {
+    @include subTitle(14);
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    gap: 10px;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  &__items {
+    padding-bottom: 150px;
+  }
+}
+.items-packages {
+  display: flex;
+  padding-top: 112px;
+}
+.item-packages {
+  &__item {
+  }
+
+  &__img-container {
+  }
+
+  &__name {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &__line {
+
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+}
